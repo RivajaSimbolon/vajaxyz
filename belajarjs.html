@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JavaScript</title>
+    <style>
+      .btn {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <button onclick="aku()">Klik Disini</button> <br />
+      <br />
+      <button onclick="kau()">Klik Aku</button> <br />
+      <br />
+      <button onclick="npm()">Klik Ini</button> <br />
+      <br />
+      <button onclick="tambah()">Penjumlahan</button> <br />
+      <br />
+      <button onclick="kali()">Perkalian</button> <br />
+      <br />
+      <button onclick="bagi()">Pembagian</button> <br />
+      <br />
+      <button onclick="kurang()">Pengurangan</button> <br />
+      <br />
+    </div>
+  </body>
+
+  <script>
+    function aku() {
+      alert("Helloo Broo!!");
+    }
+    function kau() {
+      alert("Rivaja Bonari Simbolon");
+    }
+    function npm() {
+      alert("222520010");
+    }
+    function tambah() {
+      var x = 8;
+      var y = 10;
+      var hasil = x + y;
+      document.write("x = " + x + "<br>");
+      document.write("y = " + y + "<br>");
+      document.write("hasil = " + hasil);
+
+
+      function kembali() {
+    // Menghapus hasil dan tombol kembali
+    document.body.innerHTML = '';
+      document.write("<br><br>");
+      document.write("<button onclick='kembali()'>Kembali</button>");
+    }
+    function kali() {
+      var x = 8;
+      var y = 10;
+      var hasil = x * y;
+      document.write("x = " + x + "<br>");
+      document.write("y = " + y + "<br>");
+      document.write("hasil = " + hasil);
+
+      document.write("<br><br>");
+      document.write("<button onclick='kembali()'>Kembali</button>");
+    }
+    function bagi() {
+      var x = 8;
+      var y = 10;
+      var hasil = x / y;
+      document.write("x = " + x + "<br>");
+      document.write("y = " + y + "<br>");
+      document.write("hasil = " + hasil);
+
+      document.write("<br><br>");
+      document.write("<button onclick='kembali()'>Kembali</button>");
+    }
+    function kurang() {
+      var x = 8;
+      var y = 10;
+      var hasil = x - y;
+      document.write("x = " + x + "<br>");
+      document.write("y = " + y + "<br>");
+      document.write("hasil = " + hasil);
+
+      document.write("<br><br>");
+      document.write("<button onclick='kembali()'>Kembali</button>");
+
+    }
+  </script>
+</html>

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Portfolio</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link id="favicon" rel="shortcut icon" href="images/sdcicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-body-secondary p-0"
+      id="section-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">
+          <span class="text-gradient-color1"
+            ><img src="images/sdcicon.svg" alt="" class="logo" /> Kelompok</span
+          ><span class="text-gradient-color2"> 3</span
+          ><span><sup>\></sup></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Created By</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#skills">Skilss</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#timeline">Kategori</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sosial Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/rivaja.simbolon.3"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-facebook-square text-dark fs-5"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.instagram.com/vajaasbln_/"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-instagram-alt text-bg-dark fs-5"></i>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://wa.me/6281275232909"
+                    target="_blank"
+                  >
+                    <i class="bx bxl-whatsapp-square text-bg-dark fs-5"></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <div class="btn-nav">
+                  <li class="text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-orange w-1 rounded-5 rounded-top"
+                    >
+                      <a href="galery.html">Galeri</a>
+                    </button>
+                  </li>
+                  <li class="text-center" style="margin-top: 10px">
+                    <button
+                      type="submit"
+                      class="btn btn-orange w-1 rounded-5 rounded-bottom"
+                    >
+                      <a
+                        href=" https://rivajasimbolon.github.io/angkringan/"
+                        target="_blank"
+                        >Angkringan</a
+                      >
+                    </button>
+                  </li>
+                </div>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <button
+                class="btn nav-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="bi bi-sun-fill theme-icon-active"
+                  data-theme-icon-active="bi-sun-fill"
+                ></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="light"
+                  >
+                    <i
+                      class="bi bi-sun-fill me-2 opacity-50"
+                      data-theme-icon="bi-sun-fill"
+                    ></i>
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="dark"
+                  >
+                    <i
+                      class="bi bi-moon-stars-fill me-2 opacity-50"
+                      data-theme-icon="bi-moon-stars-fill"
+                    ></i>
+                    Dark
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="auto"
+                  >
+                    <i
+                      class="bi bi-circle-half me-2 opacity-50"
+                      data-theme-icon="bi-circle-half"
+                    ></i>
+                    Auto
+                  </button>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section id="home" class="header-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col md-6">
+            <p class="text-orange fw-semibold"></p>
+            <h1 class="header-title text-uppercase fw-bold mb-5">
+              Halo Semuanya 👋<br class="d-none d-md-block" />
+              <span>Kami dari </span><span class="text-orange">Kelompok</span> 3
+            </h1>
+            <h3 class="text-dark fs-3 fw-bold">
+              <span class="text-secondary-emphasis">Dengan Nama</span>
+              <span class="typing-text text-orange"></span>
+            </h3>
+
+            <span class="text-secondary-emphasis"
+              >Rivaja Simbolon [222520010]</span
+            >
+            <br />
+            <span class="text-secondary-emphasis"
+              >Riris Sagala [222520015]</span
+            >
+            <br />
+            <span class="text-secondary-emphasis"
+              >Glorya Aritonang [222520025]</span
+            >
+            <br />
+            <span class="text-secondary-emphasis"
+              >Bintang Nainggolan [222520014]</span
+            >
+            <br />
+            <span class="text-secondary-emphasis"
+              >Wely Siagian [222520023]</span
+            >
+            <br />
+            <span class="text-secondary-emphasis"
+              >Martogi Pandiangan [2225200**]</span
+            >
+            <br />
+          </div>
+
+          <div class="col-md-5 rounded-5">
+            <img src="images/b.jpg" class="header-img" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-4 mt-5">
+        <div class="d-flex flex-column align-items-center gap-2"></div>
+        <div class="d-flex align-items-center gap-2">
+          <h2 class="header-skills fw-bold mb-0">😂</h2>
+          <p class="text-secondary fs-7 mb-0">
+            Asikin<br />
+            Ajaa !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="text-orange fw-semibold">Project</p>
+        <h2 class="section-title mb-5">Created By</h2>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/btk.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Rivaja Simbolon</h6>
+                    <a
+                      href="https://wa.me/6281275232909"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/vajaasbln_/"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/rivaja.simbolon.3"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/riris.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Riris Sagala</h6>
+                    <a
+                      href="https://wa.me/6282246605465"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/risagala_?igsh=Zm5pb290eDFpeDl2"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a href="#" target="_blank" class="text-orange mb-2 p-2">
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/glor.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Glorya Aritonang</h6>
+                    <a
+                      href="https://wa.me/6282274966681"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/gloryaaaritonang"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/gloryaputrinatasya.ompusunggu"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/binatang.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Bintang Nainggolan</h6>
+                    <a
+                      href="https://wa.me/6281268898414"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1mdBFm3t8Uvbndk3CNfKe1NvbYDtpfWrG/view?usp=drive_link"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1mdBFm3t8Uvbndk3CNfKe1NvbYDtpfWrG/view?usp=drive_link"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/wely.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Wely Siagian</h6>
+                    <a
+                      href="https://wa.me/6282161615496"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/ely_ronahel?igsh=MWE1dWVpM3R6aDAzdw=="
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/wely.ronahel?mibextid=ZbWKwL"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/togi.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3 zoom-image"
+                  />
+                  <div class="container mt-4 text-center">
+                    <h6 class="fw-semibold mb-4">Martogi Pandiangan</h6>
+                    <a
+                      href="https://wa.me/6281265359670"
+                      target="_blank"
+                      class="text-orange mb-2 p-2"
+                    >
+                      <i class="bx bxl-whatsapp text-bg-dark fs-5"></i>
+                    </a>
+                    <a href="#" target="_blank" class="text-orange mb-2 p-2">
+                      <i class="bx bxl-instagram text-bg-dark fs-5"></i>
+                    </a>
+                    <a href="#" target="_blank" class="text-orange mb-2 p-2">
+                      <i class="bx bxl-facebook-square text-bg-dark fs-5"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <!-- <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="row align-item-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Skills</p>
+            <h2 class="section-title mb-5 text-white">Programming Skills</h2>
+
+            <div class="mb-3">
+              <div
+                class="d-flex align-item-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">java</p>
+                <p class="text-white text-uppercase fw-semibold mb-0">65%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="span-progress" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-item-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  javascript
+                </p>
+                <p class="text-white text-uppercase fw-semibold mb-0">2%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="span-progress" style="width: 2%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-item-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">html</p>
+                <p class="text-white text-uppercase fw-semibold mb-0">55%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="span-progress" style="width: 55%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-item-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">css</p>
+                <p class="text-white text-uppercase fw-semibold mb-0">40%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="span-progress" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="d-flex align-item-center justify-content-between mb-2"
+              >
+                <p class="text-white text-uppercase fw-semibold mb-0">
+                  body language
+                </p>
+                <p class="text-white text-uppercase fw-semibold mb-0">100%</p>
+              </div>
+              <div class="progress-bar">
+                <div class="span-progress" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img src="images/skill-photo.png" class="skills-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- WORKING PRIODE -->
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <p class="text-orange fw-semibold">Timeline</p>
+        <h2 class="section-title mb-5">Kategori</h2>
+
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">Juni, 2010 - Mei, 2016</div>
+          <div class="col-md-4">Sekolah Dasar No.030337 Batangari</div>
+          <div class="col-md-4">
+            Desa Pegagan Julu VIII, Kec. Sumbul, Kab. Dairi, Sumatera Utara
+          </div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">Juni, 2016 - Mei, 2019</div>
+          <div class="col-md-4">SMP Negeri 3 Sumbul</div>
+          <div class="col-md-4">
+            Jl. Ngkasah No.09, Desa Pegagan Julu I, Kec. Sumbul, Kab. Dairi,
+            Sumatera Utara
+          </div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">Juni, 2019 - April, 2022</div>
+          <div class="col-md-4">SMK Negeri 1 Pegagan Hilir</div>
+          <div class="col-md-4">
+            Jln. Ujung Paropo, Bandar Huta Usang, Kec. Pegagan Hilir, Tigabaru,
+            Kab. Dairi, Sumatera Utara
+          </div>
+        </div>
+        <div class="row py-3 border-bottom">
+          <div class="col-md-4">September, 2022 - Sekarang</div>
+          <div class="col-md-4">Perguruan Tinggi S1 Sistem Informasi</div>
+          <div class="col-md-4">
+            Jl. Hang Tuah No.8, Madras Hulu, Kec. Medan Polonia, Kota Medan,
+            Sumatera Utara
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATES NEWS -->
+    <!-- <section class="section news-section" id="news">
+      <div class="container">
+        <p class="text-orange fw-semibold">News</p>
+        <h2 class="section-title mb-5">latest news</h2>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/news-1.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Bagaimana Cara menggunakan PHP</h6>
+                  <p class="text-secondary fs-7">Maret, 16 2017</p>
+                  <a
+                    href="https://www.petanikode.com/tutorial/php/"
+                    target="_blank"
+                    class="text-orange fs-7"
+                    >Detail News</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/news-2.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Belajar JavaScript Untuk Pemula</h6>
+                  <p class="text-secondary fs-7">Agustus, 17 2023</p>
+                  <a
+                    href="https://www.petanikode.com/tutorial/javascript/"
+                    target="_blank"
+                    class="text-orange fs-7"
+                    >Detail News</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/news-3.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">Belajar Bootstrap<sup>5</sup></h6>
+                  <p class="text-secondary fs-7">Januari, 22 2020</p>
+                  <a
+                    href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                    target="_blank"
+                    class="text-orange fs-7"
+                    >Detail News</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/news-4.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">
+                    Extention VS-Code yang digunakan oleh Programmer
+                  </h6>
+                  <p class="text-secondary fs-7">Juli, 04 2016</p>
+                  <a
+                    href="https://dosenit.com/software/10-extensions-visual-studio-code-terbaik-untuk-seorang-web-developer"
+                    target="_blank"
+                    class="text-orange fs-7"
+                    >Detail News</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card grow-card">
+                <div class="card-body">
+                  <img
+                    src="images/news-5.png"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-semibold">
+                    Bagaimana membuat website portfolio keren
+                  </h6>
+                  <p class="text-secondary fs-7">Desember, 02 2023</p>
+                  <a
+                    href="https://www.hostinger.co.id/tutorial/web-portofolio"
+                    target="_blank"
+                    class="text-orange fs-7"
+                    >Detail News</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold">Contact</p>
+            <h2 class="section-title mb-5">Get In Touch</h2>
+            <p class="text-secondary mb-3">
+              Jika ada kesalahan atau kekurangan tolong dimaklumi tetapi jika
+              ada kelebihan bisa dikembalikan
+            </p>
+
+            <div class="d-flex align-items-center gap2 mb-3">
+              <i class="bx bx-map-pin text-orange fs-5"></i>
+              <div class="mb 0">222673, Medan, Sumatera Utara</div>
+            </div>
+            <div class="d-flex align-items-center gap2 mb-3">
+              <i class="bx bx-phone-call text-orange fs-5"></i>
+              <div class="mb 0">+62 812 7523 2909</div>
+            </div>
+            <div class="d-flex align-items-center gap2 mb-3">
+              <i class="bx bx-envelope text-orange fs-5"></i>
+              <div class="mb 0">kelompok3@gmail.com</div>
+            </div>
+            <div class="d-flex align-items-center gap2 mb-3">
+              <i class="bx bx-globe text-orange fs-5"></i>
+              <div class="mb 0">kelompok3.ac.id</div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form name="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  name="nama"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="pesan"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">
+                Kirim
+              </button>
+
+              <button
+                class="btn btn-primary btn-loading d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 text-center">
+      <div class="container-fluid down">
+        <p class="text-black fs-7 mb-0 p-2">
+          Copyright &copy : 2024 Project_Kelompok. Made with Kelompok 3
+        </p>
+      </div>
+    </footer>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="/js/script.js"></script>
+
+    <script>
+      // SWIPER
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".btn-prev",
+          prevEl: ".btn-next",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <!-- musik -->
+    <!-- <script>
+      // Dapatkan elemen audio
+      var audio = document.getElementById("myAudio");
+
+      // Fungsi untuk memutar atau menghentikan lagu
+      function toggleAudio() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+
+      // Atur event click pada elemen audio untuk memanggil fungsi toggleAudio
+      audio.addEventListener("click", toggleAudio);
+    </script> -->
+
+    <!-- DOWNLOAD CV -->
+    <!-- <script>
+      function downloadCV() {
+        window.open("Tugas Bu Yola.pdf", "_blank");
+      }
+
+      // SEND EMAIL
+      function sendEmail() {
+        // The email details
+        var emailData = {
+          Host: "smtp.yourisp.com",
+          Username: "username",
+          Password: "password",
+          To: "them@website.com",
+          From: "you@isp.com",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        };
+
+        // Send the email
+        Email.send(emailData);
+      }
+    </script> -->
+    <!-- thema -->
+    <!-- <script>
+      (() => {
+        "use strict";
+
+        const getStoredTheme = () => localStorage.getItem("theme");
+        const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+        const getPreferredTheme = () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+            return storedTheme;
+          }
+
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        };
+
+        const setTheme = (theme) => {
+          if (
+            theme === "auto" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.setAttribute("data-bs-theme", "dark");
+          } else {
+            document.documentElement.setAttribute("data-bs-theme", theme);
+          }
+        };
+
+        setTheme(getPreferredTheme());
+
+        const showActiveTheme = (theme, focus = false) => {
+          const themeSwitcher = document.querySelector("#bd-theme");
+
+          if (!themeSwitcher) {
+            return;
+          }
+
+          const themeSwitcherText = document.querySelector("#bd-theme-text");
+          const activeThemeIcon = document.querySelector(".theme-icon-active");
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const iconOfActiveBtn =
+            btnToActive.querySelector("i").dataset.themeIcon;
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+              element.setAttribute("aria-pressed", "false");
+            });
+
+          btnToActive.classList.add("active");
+          btnToActive.setAttribute("aria-pressed", "true");
+          activeThemeIcon.classList.remove(
+            activeThemeIcon.dataset.themeIcon.active
+          );
+          activeThemeIcon.classList.add(iconOfActiveBtn);
+          activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+
+          const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+          themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+          if (focus) {
+            themeSwitcher.focus();
+          }
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            const storedTheme = getStoredTheme();
+            if (storedTheme !== "light" && storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          showActiveTheme(getPreferredTheme());
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                const theme = toggle.getAttribute("data-bs-theme-value");
+                setStoredTheme(theme);
+                setTheme(theme);
+                showActiveTheme(theme, true);
+              });
+            });
+        });
+      })();
+    </script> -->
+
+    <!-- contact -->
+    <!-- <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzjWwvjJihKz3-24SxEnHM5XFjNPgQd_dv3uD_fgjLSp_4AAXsC6IC4C_ECvWyLkGsuBg/exec";
+      const form = document.forms["contactForm"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
+  </body>
+</html>
